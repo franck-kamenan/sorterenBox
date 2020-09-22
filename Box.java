@@ -42,11 +42,9 @@ public class Box implements Comparable<Box> {
 
     @Override
     public String toString() {
-        return "Box{" +
-                "length=" + length +
+        return "length=" + length +
                 ", width=" + width +
-                ", height=" + height +
-                '}';
+                ", height=" + height;
     }
 
     @Override
