@@ -16,5 +16,13 @@ public class BoxApp {
         boxSet.add(box3);
 
         boxSet.forEach(System.out::println); // Van kleinste naar grootste.
+
+        TreeSet<Box2> boxSet2 = new TreeSet<>(new BoxComparator());
+        boxSet2.add(new Box2(100, 100, 100));
+        boxSet2.add(new Box2(30, 5, 8));
+        boxSet2.add(new Box2(8, 15, 11));
+
+        System.out.println("-----");
+        boxSet.forEach(System.out::println); // Van kleinste naar grootste.
     }
 }
