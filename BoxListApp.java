@@ -23,7 +23,7 @@ public class BoxListApp {
         boxList.add(new Box(8, 15, 30));
         boxList.add(new Box(15, 3, 45));
 
-        boxList.sort(Comparator.reverseOrder());
+        boxList.sort(Comparator.comparingInt(e -> e.getVolume()));
         boxList.forEach(System.out::println);
     }
 }
