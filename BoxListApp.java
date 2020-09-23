@@ -23,7 +23,7 @@ public class BoxListApp {
         boxList.add(new Box(8, 15, 30));
         boxList.add(new Box(15, 3, 45));
 
-        boxList.sort(Comparator.naturalOrder());
+        boxList.sort(Comparator.reverseOrder());
         boxList.forEach(System.out::println);
     }
 }
