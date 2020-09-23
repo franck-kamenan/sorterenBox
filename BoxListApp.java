@@ -13,5 +13,9 @@ public class BoxListApp {
 
         boxList.sort(new BoxComparator());
         boxList.forEach(System.out::println);
+
+        System.out.println("-----with lambda-----");
+        boxList.sort(((o1, o2) -> o1.getVolume() - o2.getVolume()));
+        boxList.forEach(System.out::println);
     }
 }
