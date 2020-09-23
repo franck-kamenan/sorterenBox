@@ -17,13 +17,7 @@ public class BoxApp {
 
         boxSet.forEach(System.out::println); // Van kleinste naar grootste.
 
-        TreeSet<Box2> boxSet2 = new TreeSet<>(new Comparator<Box2>(){
-            @Override
-            public int compare(Box2 o1, Box2 o2){
-                return o1.getVolume() - o2.getVolume();
-            }
-        });
-
+        TreeSet<Box2> boxSet2 = new TreeSet<>((o1, o2) -> o1.getVolume() - o2.getVolume());
 
         boxSet2.add(new Box2(100, 100, 100));
         boxSet2.add(new Box2(30, 5, 8));
